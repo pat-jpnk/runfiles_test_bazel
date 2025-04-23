@@ -3,8 +3,7 @@ cc_binary(
     srcs = ["main.cpp"],
     deps = [
         "@googletest//:gtest_main",
-        #"@rules_cc//cc/runfiles:runfiles",  # This is where `runfiles.h` comes from
-    	"@rules_cc//cc/runfiles",	     # more efficient path, same as docs
+	"@rules_cc//cc/runfiles",  		# This is where `runfiles.h` comes from, equivalent to @rules_cc//cc/runfiles:runfiles
     ],
 )
 
